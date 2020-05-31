@@ -1,0 +1,64 @@
+.nav{
+    display: grid;
+    height: 5em;
+    grid-gap: 2em;
+    text-transform: uppercase;
+    grid-template-columns: 15em 35em auto;
+    & span{
+        font-weight: 1000;
+        text-align: right;
+        font-size: 25px;
+        position: relative;
+        top: 20%;
+    }
+    .Nav{
+        & ul {
+        letter-spacing: 2px;
+        padding: 12px 0 0 0 ;
+        list-style: none;
+        display: flex;
+        font-size: 14px;
+        font-weight: 500;
+        flex-direction: row;
+        justify-content: space-between;
+        & .link{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    }
+    .nav_sec{
+        margin-left: 5em;
+        padding: 12px 0 0 0;
+        & ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        flex-direction: row;
+        & select{
+            cursor: pointer;
+            border: none;
+            text-transform: uppercase;
+            padding: 8px 15px 8px 8px;
+        }
+        & .acc{
+            height: 1.5em;
+            width: 1.5em;
+            background-size: contain;
+            background-image: url('../assets/account.png');
+        }
+        & .search{
+            height: 1.5em;
+            width: 1.5em;
+            background-size: contain;
+            background-image: url('../assets/search.png');
+        }
+        & .cart{
+            height: 1.5em;
+            width: 1.5em;
+            background-size: contain;
+            background-image: url('../assets/cart.png');
+        }
+        }
+    }
+}
