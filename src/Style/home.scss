@@ -33,6 +33,33 @@
             color: white;
             border: 2px solid white;
             padding: 8px 25px 8px 25px;
+            outline: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 950px){
+    .Home{
+        position: relative;
+        height: 50vh;
+        background-position: center;
+        & h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60%;
+            font-size: 18.8px;
+            transform: translate(-40%,-50%);
+        }
+        & span{
+            position: absolute;
+            text-align: center;
+            font-size: 1em;
+            right: 50%;
+            width: 90%;
+            transform: translate(-30%);
+            top: 70%;
         }
     }
 }

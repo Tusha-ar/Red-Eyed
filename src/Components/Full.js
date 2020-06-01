@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Short = (props) =>{
+const Full = (props) =>{
     return(
-        <div className='menshort'>
+        <div className='full'>
             {props.main === true?'':
                 <div className='head'>
                     <h3>{props.type === 'Mens'? `Men's` : props.type === 'Womens'? `Women's`: props.type === 'Classics'? `Classics`: props.type === 'Metal'? 'Metal': props.type === 'Prism'? 'Prism':''}</h3>
@@ -29,4 +29,4 @@ const Short = (props) =>{
     )
 }
 
-export default Short
+export default Full

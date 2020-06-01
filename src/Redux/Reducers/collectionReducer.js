@@ -1,4 +1,4 @@
-import { uuid } from "uuidv4"
+
 
 const mensCollection = [
     {
@@ -262,7 +262,7 @@ const mensCollection = [
         for: 'unisex',
         classics: false,
         body: 'non-metal',
-        soldOut: false,
+        soldOut: true,
         prism: true
     },
     {
@@ -274,7 +274,7 @@ const mensCollection = [
         for: 'unisex',
         classics: false,
         body: 'non-metal',
-        soldOut: false,
+        soldOut: true,
         prism: true
     }
 ]

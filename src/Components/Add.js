@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Add = () =>{
     return(
@@ -11,7 +12,7 @@ const Add = () =>{
                     <p>
                     Our first true cat-eye design, speaks for it self. Stand out in a crowd with a neck-turning design and an eye-popping color combination. 
                     </p>
-                    <button>shop now</button>
+                    <Link to='/collectionsDetails/All'><button>Shop Now</button></Link>
                 </span>
             </div>
         </div>

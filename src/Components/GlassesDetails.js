@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const GlassesDetails = ({match}) =>{
+    console.log('abc')
     const item = useSelector(state=>state.collectionReducer).filter(product=>product.id === match.params.id)
     return(
         <div className='detailed'>

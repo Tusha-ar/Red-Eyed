@@ -1,9 +1,15 @@
 .nav{
+    & .link{
+        text-decoration: none;
+        color: black;
+    }
     display: grid;
     height: 5em;
+    width: 90%;
     grid-gap: 2em;
     text-transform: uppercase;
-    grid-template-columns: 15em 35em auto;
+    justify-content: space-between;
+    grid-template-columns: 17% 40% 30%;
     & span{
         font-weight: 1000;
         text-align: right;
@@ -44,21 +50,110 @@
         & .acc{
             height: 1.5em;
             width: 1.5em;
+            background-repeat: no-repeat;
             background-size: contain;
             background-image: url('../assets/account.png');
         }
         & .search{
+            cursor: pointer;
             height: 1.5em;
             width: 1.5em;
+            background-repeat: no-repeat;
             background-size: contain;
             background-image: url('../assets/search.png');
         }
         & .cart{
             height: 1.5em;
             width: 1.5em;
+            background-repeat: no-repeat;
             background-size: contain;
             background-image: url('../assets/cart.png');
         }
+        & .hamburger{
+            cursor: pointer;
+            display: none;
+            & ul{
+                height: 1.5em;
+                width: 1em;
+                display: flex;
+                flex-direction: column;
+            & .line1{
+                background-color: black;
+                width: 2em;
+                height: 3px;
+            }
+            & .line2{
+                background-color: black;
+                width: 1.5em;
+                height: 3px;
+            }
+            & .line3{
+                background-color: black;
+                width: 2em;
+                height: 3px;
+            }
+        }
+        }
+        }
+    }
+}
+
+
+@media screen and (max-width: 950px){
+    .nav{
+        display: flex;
+        flex-direction: row;
+        width: 99%;
+        justify-content: space-around;
+        .Nav{
+            order: 5;
+            .NavSlide{
+                position: absolute;
+                right: -0%; 
+                top: 10%;
+                width: 20em;   
+                height: 45em;
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+                justify-content: space-around;
+                align-items: center;
+                z-index: 100;
+                transition: 0.5s ease;
+                & .link{
+                    color: wheat;
+                }
+            }
+            & ul{
+                position: absolute;
+                right: -100%; 
+                top: 10%;
+                width: 20em;   
+                height: 45em;
+                display: flex;
+                flex-direction: column;
+                background-color: black;
+                justify-content: space-around;
+                align-items: center;
+                z-index: 100;
+                transition: 0.5s ease;
+            }
+        }
+        .nav_sec{
+            margin-top: 2%;
+            & ul{
+                order: 2;
+                width: 100%;
+                position: relative;
+                background-position: center;
+                height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: space-around;
+                & .hamburger{
+                    display: block;
+                }
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Influencers = () =>{
@@ -12,7 +13,7 @@ const Influencers = () =>{
                     <p>
                     They're classic, stylish and yet modern. Now, fitted with the all new Glass Polarized lenses with Anti Reflective Coating.
                     </p>
-                    <button>Shop Now</button>
+                    <Link to='/collectionsDetails/All'><button>Shop Now</button></Link>
                 </span>
             </div>
             <div className='show'>
@@ -23,7 +24,7 @@ const Influencers = () =>{
                     <p>
                     Each pair of Jade Black is made with obsessive attention detail, with the goal impress. We settle for nothing less and refuse to compromise at the customer's expense.  
                     </p>
-                    <button>Shop Now</button>
+                    <Link to='/collectionsDetails/Prism'><button>Shop Now</button></Link>
                 </span>
             </div>
         </div>
