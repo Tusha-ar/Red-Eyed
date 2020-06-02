@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Short from './Short';
+import Full from './Full';
 
 
 const SearchRasult = ()=>{
@@ -12,7 +12,7 @@ const SearchRasult = ()=>{
             <h1 className='noRes'>Please Enter Somthing in The Search Bar</h1>:
             results.length === 0?
             <h1 className='noRes'>No Result Found With '{keyword}' name</h1>:
-            <Short type= 'Reaults' collection={results}/>
+            <Full type= 'Reaults' collection={results}/>
             }
         </div>
     )

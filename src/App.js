@@ -8,6 +8,7 @@ import GlassesDetails from './Components/GlassesDetails';
 import CollectionCatagories from './Components/CollectionCatagories';
 import Search from './Components/Search';
 import SearchRasult from './Components/SearchResult';
+import Cart from './Components/Cart';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path='/collectionsDetails/Classics' component={()=><CollectionCatagories type='Classics'/>}/>
           <Route path='/collectionsDetails/Metal' component={()=><CollectionCatagories type='Metal'/>}/>
           <Route path='/SearchResults' component={SearchRasult}/>
+          <Route path='/cart' component={Cart}/>
         </Switch>
       </BrowserRouter>
     </div>

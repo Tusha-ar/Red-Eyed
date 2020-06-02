@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 
 const Nav =()=>{
+    const number_cart = useSelector(state=>state.CartReducer)
+
     const navHandler = ()=>{
         const nav = document.getElementById('NavShow')
         nav.classList.toggle('NavSlide')
@@ -46,7 +49,7 @@ const Nav =()=>{
                     </li> */}
                     <li className='acc'></li>
                     <li className='search' onClick={searchSlide}></li>
-                    <li className='cart'></li>
+                <Link to='/cart' className='link'><li className='cart'>{number_cart.total_items}</li></Link>
                     <li className='hamburger' onClick={navHandler}>
                         <ul>
                             <li className='line1'></li>

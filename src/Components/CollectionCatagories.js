@@ -20,7 +20,7 @@ const CollectionCatagories = (props)=>{
                 <Full type='men' collection={mens_collection} main={true}/>:
                 props.type === 'Women'?
                 <Full type='Women' collection={womens_collection} main={true}/>:
-                props. type === 'Prism'?
+                props.type === 'Prism'?
                 <Full type='Prism' collection={prism} main={true}/>:
                 props.type === 'All'?
                 <Full type='All' collection={All} main={true}/>:

@@ -3,8 +3,8 @@
     text-align: center;
     & img{
         background-color: #F7F7F7;
-        height: 40em;
-        width: 43em;
+        height: 60%;
+        width: 60%;
         display: flex;
         justify-self: center;
         left: 50%;
@@ -32,5 +32,14 @@
         font-weight: 500;
         font-size: 1.2em;
         color: rgb(36, 35, 35);
+    }
+}
+
+@media screen and (max-width: 950px){
+    .detailed{
+        & img{
+        
+            width: 100%;
+        }
     }
 }
