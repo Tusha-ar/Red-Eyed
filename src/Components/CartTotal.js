@@ -12,8 +12,8 @@ const CartTotal = ()=>{
             <div className='det'> 
             <span><strong>Net Total:</strong> Rs. {totalPrice.total_price}</span>
             <span><strong>Delivery Charges:</strong> Rs. 99</span>
-            <span><strong>GST 18%:</strong> Rs.{totalPrice.total_price * 0.18}</span>
-            <span><strong>Total Amount:</strong> Rs. {totalPrice.total_price+99+(totalPrice.total_price*0.18)}</span>
+            <span><strong>GST 18%:</strong> Rs.{(totalPrice.total_price * 0.18).toFixed(2)}</span>
+            <span><strong>Total Amount:</strong> Rs. {(totalPrice.total_price+99+(totalPrice.total_price*0.18)).toFixed(2)}</span>
             </div>
             </div>:''
             }   

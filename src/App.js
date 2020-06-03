@@ -9,6 +9,8 @@ import CollectionCatagories from './Components/CollectionCatagories';
 import Search from './Components/Search';
 import SearchRasult from './Components/SearchResult';
 import Cart from './Components/Cart';
+import Login from './Components/Login';
+import Signup from './Components/SignUp';
 
 
 function App() {
@@ -28,6 +30,8 @@ function App() {
           <Route path='/collectionsDetails/Metal' component={()=><CollectionCatagories type='Metal'/>}/>
           <Route path='/SearchResults' component={SearchRasult}/>
           <Route path='/cart' component={Cart}/>
+          <Route path='/login' component={Login}/>
+          <Route path='/SignUp' component={Signup}/>
         </Switch>
       </BrowserRouter>
     </div>

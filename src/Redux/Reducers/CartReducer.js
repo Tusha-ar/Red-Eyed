@@ -4,6 +4,7 @@ const initialState = {
         total_items: 0
     }
     let total_items = 0
+    let stack = 0
 const CartReducer = (state= initialState, actions)=>{
     const already = state.items.filter(item=> item.id === actions.payload.id)
     switch(actions.type){
@@ -24,6 +25,8 @@ const CartReducer = (state= initialState, actions)=>{
             else
             {
                 actions.payload.count = 1
+                stack++
+                actions.payload.stack = stack
                 total_items++
             return {
                 items: [
@@ -31,7 +34,7 @@ const CartReducer = (state= initialState, actions)=>{
                     actions.payload
                 ],
                 total_price: state.total_price + parseInt(actions.payload.price),
-                total_items: total_items
+                total_items: total_items,
             }
         }
         case 'REMOVE_ITEM':

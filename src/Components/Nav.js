@@ -47,7 +47,7 @@ const Nav =()=>{
                             <option>aud</option>
                         </select>
                     </li> */}
-                    <li className='acc'></li>
+                    <Link to='/login' className='link'><li className='acc'></li></Link>
                     <li className='search' onClick={searchSlide}></li>
                 <Link to='/cart' className='link'><li className='cart'>{number_cart.total_items}</li></Link>
                     <li className='hamburger' onClick={navHandler}>

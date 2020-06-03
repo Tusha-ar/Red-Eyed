@@ -8,6 +8,10 @@ import RemoveFromCart from '../Redux/Actions/RemoveFromCart';
 
 const Cart = () =>{
     const cart_items = useSelector(state=>state.CartReducer).items
+    cart_items.sort(function(a, b){
+        return a.stack-b.stack
+    })
+    console.log(cart_items)
     const dispatch = useDispatch()
     return(
         <div className='cart_list'>
