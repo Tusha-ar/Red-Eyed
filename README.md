@@ -6,4 +6,4 @@ E-commerce Website for selling sunglasses
 * React
 * Redux
 ## live at 
-https://red-eyed.tusha-ar.now.sh
+https://red-eyed-19w3p9bq5.now.sh/
